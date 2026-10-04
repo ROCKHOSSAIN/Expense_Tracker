@@ -1,3 +1,4 @@
+from src.tracker import add_expense
 while True:
     print("\n--- Expense Tracker Menu ---")
     print("1. Add Expense")
@@ -8,13 +9,16 @@ while True:
 
     choice=input("Enter your choice (1-5):")
     if(choice=="1"):
-        addexpense()
+        amount=float(input("Expense Amount:"))
+        category = input("Enter category (e.g., Food, Transport): ")
+        note = input("Enter note/description: ")
+        add_expense(amount,category,note)
     elif(choice=="2"):
-        viewexpense()
+        view_expense()
     elif(choice=="3"):
-        filterexpense()
+        filter_expense()
     elif(choice=="4"):
-        viewexpense()
+        view_expense()
     elif(choice=="5"):
         print("exiting application and good bye")
         break
