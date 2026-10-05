@@ -1,0 +1,20 @@
+[
+    {
+        "amount": 40.0,
+        "category": "rice",
+        "note": "khabo",
+        "date": "2026-10-05 11:45"
+    },
+    {
+        "amount": 500.0,
+        "category": "chicken ramen",
+        "note": "during break",
+        "date": "2026-10-05 11:46"
+    },
+    {
+        "amount": 4000.0,
+        "category": "trip",
+        "note": "usa visit",
+        "date": "2026-10-05 11:58"
+    }
+]
