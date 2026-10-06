@@ -21,3 +21,29 @@ A clean, modular, and efficient Command Line Interface (CLI) application built i
 5. Delete Expense
 6. Exit
 ==============================
+
+
+
+
+
+👤 User
+                │
+                ▼
+           ┌─────────┐
+           │ main.py │
+           └────┬────┘
+                │
+                ▼
+        ┌───────────────┐
+        │  tracker.py   │
+        └───────┬───────┘
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+   load_expense()   save_expense()
+        │                │
+        └───────┬────────┘
+                ▼
+        ┌─────────────┐
+        │ expense.json│
+        └─────────────┘
