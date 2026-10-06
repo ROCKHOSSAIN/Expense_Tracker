@@ -3,13 +3,14 @@ import os
 from datetime import datetime
 
 FILE_NAME = "expense.json"
-
+Budget_File="budget.json"
 
 def load_expense():
     if os.path.exists(FILE_NAME):
         with open(FILE_NAME, "r") as file:
             return json.load(file)
     return []
+
 
 # শুরুতেই ফাইল থেকে ডাটা লোড করা হচ্ছে (আগের ওভাররাইট বাগটি ঠিক করা হয়েছে)
 all_expenses = load_expense()
@@ -18,12 +19,7 @@ def save_expense():
     with open(FILE_NAME, "w") as file:
         json.dump(all_expenses, file, indent=4)
 
-def set_monthly_budget():
-    try:
-        budget = float(input("\nEnter your monthly budget amount: "))
-        print(f"Budget set to {budget} BDT successfully!")
-    except ValueError:
-        print("Please enter a valid number.")
+
 
 
 def add_expense(amount, category, note):

@@ -16,5 +16,17 @@
         "category": "trip",
         "note": "usa visit",
         "date": "2026-10-05 11:58"
+    },
+    {
+        "amount": 400.0,
+        "category": "pot",
+        "note": "bring",
+        "date": "2026-10-06 11:49"
+    },
+    {
+        "amount": 500.0,
+        "category": "book",
+        "note": "harry",
+        "date": "2026-10-06 11:50"
     }
 ]
